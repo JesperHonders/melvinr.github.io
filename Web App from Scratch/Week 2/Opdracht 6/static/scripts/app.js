@@ -4,7 +4,7 @@ var myApp = myApp || {};
 
 //IIFE, this is a self invoking function
 (function () {
-    "use strict";
+    'use strict';
 
     //Object literal declarations
     myApp.app = {
@@ -57,15 +57,15 @@ var myApp = myApp || {};
             });
         },
         toggle: function (route) {
-            var sections = document.querySelectorAll(".togglesection");
+            var sections = document.querySelectorAll('.togglesection'); // Watch the single & double quote's
             var i;
 
             for (i = 0; i < sections.length; i++) {
-                sections[i].classList.add("inactive");
+                sections[i].classList.add('inactive');
 
                 //If there is no hash, make every section visible, in case JS is disabled.
                 if (!route) {
-                    sections[0].classList.remove("inactive");
+                    sections[0].classList.remove('inactive');
                 } else {
 
                     //make the right section, according to its hash, visible
@@ -88,7 +88,7 @@ var myApp = myApp || {};
                             },
                             author: {
                                 text: function () {
-                                    return "This book is written by " + this.author;
+                                    return 'This book is written by ' + this.author;
                                 }
                             },
                             id: {
@@ -96,7 +96,7 @@ var myApp = myApp || {};
                                     return this.title;
                                 },
                                 href: function () {
-                                    return "#bestsellersdetail/" + this.id;
+                                    return '#bestsellersdetail/' + this.id;
                                     console.log(data.results[0].book_details[0])
                                 }
                             }
@@ -139,4 +139,4 @@ var myApp = myApp || {};
 
     //Initialize app to run the application
     myApp.app.init();
-})();
+}());

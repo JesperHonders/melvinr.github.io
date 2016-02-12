@@ -1,52 +1,52 @@
 <!doctype html>
 
-<html lang="nl">
+<html lang='nl'>
 
 <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="">
-    <link rel="stylesheet" href="static/css/style.css">
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <meta name='description' content=''>
+    <link rel='stylesheet' href='static/css/style.css'>
     <title>Web App from Scratch</title>
 </head>
 
 <body>
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#bestsellers">NY Time Bestseller List</a></li>
+            <li><a href='#home'>Home</a></li>
+            <li><a href='#bestsellers'>NY Time Bestseller List</a></li>
         </ul>
     </nav>
 
     <main>
-        <section id="home" data-route="home" class="togglesection">
+        <section id='home' data-route='home' class='togglesection'>
             <h1>Start</h1>
         </section>
-        <section id="bestsellers" data-route="bestsellers" class="togglesection">
-            <div data-bind="results">
-                <div data-bind="book_details">
-                    <h2><a data-bind="id" href="">Je Javascript staat uit loser</a></h2>
-                    <p data-bind="author"></p>
-                    <img src="" data-bind="book_image" />
+        <section id='bestsellers' data-route='bestsellers' class='togglesection'>
+            <div data-bind='results'>
+                <div data-bind='book_details'>
+                    <h2><a data-bind='id'>Je Javascript staat uit loser</a></h2>  <!-- Hreff isn't needed when using transparancy. It automaticly inserts it for you if you are using directives -->
+                    <p data-bind='author'></p>
+                    <img data-bind='book_image' /> <!-- src isn't needed when using transparancy. It automaticly inserts it for you if you are using directives -->
                 </div>
             </div>
         </section>
-        <section id="bestsellersdetail" href="" data-route="bestsellersdetail" class="togglesection">
-            <div data-bind="results">
-                <div data-bind="book_details">
-                    <h2 data-bind="title"></h2>
-                    <p data-bind="description"></p>
+        <section id='bestsellersdetail' href='' data-route='bestsellersdetail' class='togglesection'>
+            <div data-bind='results'>
+                <div data-bind='book_details'>
+                    <h2 data-bind='title'></h2>
+                    <p data-bind='description'></p>
                 </div>
             </div>
         </section>
     </main>
 </body>
 
-<script src="static/lib/aja.min.js"></script>
-<script src="static/lib/routie.min.js"></script>
-<script src="static/lib/transparency.min.js"></script>
-<script src="static/lib/underscore.min.js"></script>
-<script src="static/scripts/app.js"></script>
+<script src='static/lib/aja.min.js'></script>
+<script src='static/lib/routie.min.js'></script>
+<script src='static/lib/transparency.min.js'></script>
+<script src='static/lib/underscore.min.js'></script>
+<script src='static/scripts/app.js'></script>
 
 </html>
